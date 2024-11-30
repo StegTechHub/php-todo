@@ -46,7 +46,7 @@ pipeline {
                      // Install Composer dependencies with error handling
                     sh '''
                         set -e
-                        composer require --dev phpunit/phpunit:~4.0
+                        composer require --dev phpunit/phpunit:~4.0 --no-scripts
                         composer install --no-scripts
                     '''
 
